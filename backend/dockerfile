@@ -1,7 +1,0 @@
-FROM node:10.15.0-alpine
-RUN mkdir -p /usr/src/backend
-COPY ./ /usr/src/backend/
-WORKDIR /usr/src/backend
-RUN npm install
-CMD ls 
-CMD node /usr/src/backend/app.js
